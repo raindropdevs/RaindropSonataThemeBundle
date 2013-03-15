@@ -37,8 +37,8 @@ Now the bundle is enabled.
 
 ### **CONFIGURATION**:
 
-        raindrop_sonata_theme:
-            theme: default
+    raindrop_sonata_theme:
+        theme: default
 
 
 ### **AVAILABLE THEMES** ##
