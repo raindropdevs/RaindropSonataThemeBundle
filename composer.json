@@ -1,0 +1,32 @@
+{
+    "name": "raindrop/sonata-theme-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony 2 SonataAdminBundle Themes",
+    "keywords": ["theme", "sonata", "admin"],
+    "homepage": "https://github.com/raindropdevs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raindrop Dev Team",
+            "homepage": "https://github.com/raindropdevs/RaindropSonataThemeBundle/graphs/contributors"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "sonata-project/admin-bundle": "2.1.*@dev"
+    },
+    "require-dev": {
+    },
+    "suggests": {
+    },
+    "autoload": {
+        "psr-0": { "Raindrop\\SonataThemeBundle": "" }
+    },
+    "target-dir": "Raindrop/SonataThemeBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
