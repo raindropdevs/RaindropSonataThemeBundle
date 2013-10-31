@@ -14,7 +14,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "sonata-project/admin-bundle": "2.1.*@dev"
+        "sonata-project/admin-bundle": "2.2.*@dev"
     },
     "require-dev": {
     },
