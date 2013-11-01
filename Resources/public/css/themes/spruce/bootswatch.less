@@ -1,4 +1,4 @@
-// Spruce 2.3.1
+// Spruce 2.3.2
 // Bootswatch
 // -----------------------------------------------------
 
@@ -8,19 +8,36 @@
 
 @import url(//fonts.googleapis.com/css?family=Crete+Round);
 
-h1 > small,
-h2 > small,
-h3 > small,
-h4 > small,
-h5 > small,
-h6 > small,
+h1, h2, h3, h4, h5, h6 {
+
+	small {
+		font-family: @baseFontFamily;
+		color: @headingsColor;
+	}
+}
+
 .muted {
-	color: @headingsColor;
-	font-family: @baseFontFamily;
+	color: @grayLight;
 }
 
 .jumbotron h1 {
 	font-weight: normal !important;
+}
+
+.text-warning {
+	color: @orange;
+}
+
+.text-error {
+	color: @red;
+}
+
+.text-success {
+	color: @green;
+}
+
+.text-info {
+	color: @blue;
 }
 
 // SCAFFOLDING
@@ -481,7 +498,8 @@ input, textarea, select {
 
 	&.warning,
 	&.error,
-	&.success {
+	&.success,
+	&.info {
 
 		.control-label {
 			color: @textColor;
@@ -524,6 +542,19 @@ input, textarea, select {
 
 	input, select, textarea {
 		border: 1px solid @orange;
+		color: @textColor;
+	}
+}
+
+.control-group.info {
+
+	.help-block,
+	.help-inline {
+		color: #2f96b4;
+	}
+
+	input, select, textarea {
+		border: 1px solid #2f96b4;
 		color: @textColor;
 	}
 }

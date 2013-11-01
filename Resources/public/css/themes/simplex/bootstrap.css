@@ -1,7 +1,7 @@
 @import url('//fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
 
 /*!
- * Bootstrap v2.3.1
+ * Bootstrap v2.3.2
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -3009,6 +3009,15 @@ table th[class*="span"],
 
 .open > .dropdown-menu {
   display: block;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
 }
 
 .pull-right > .dropdown-menu {
@@ -6322,6 +6331,11 @@ div.subnav .nav > li.active > a:hover {
   background-color: #f7f7f7;
 }
 
+.nav-tabs > li.disabled > a:hover {
+  color: #999999;
+  background-color: #efefef;
+}
+
 .nav-tabs .dropdown .dropdown-toggle .caret {
   border-top-color: #555555;
   border-bottom-color: #555555;
@@ -6384,6 +6398,10 @@ div.subnav .nav > li.active > a:hover {
 .nav-pills li.active > a:hover {
   color: #d9230f;
   background-color: #fbebe9;
+}
+
+.nav-pills > li.disabled > a:hover {
+  color: #999999;
 }
 
 .nav-pills .dropdown .dropdown-toggle .caret {
@@ -6506,11 +6524,9 @@ legend {
 }
 
 .label {
-  padding: 4px 4px 3px;
+  padding: 6px 12px;
   margin-right: 1px;
   margin-left: 1px;
-  font-weight: normal;
-  line-height: 26px;
 }
 
 i[class^="icon-"] {

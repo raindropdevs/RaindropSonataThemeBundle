@@ -1,13 +1,13 @@
 @import url('//fonts.googleapis.com/css?family=Oswald|Noticia+Text');
 
 /*!
- * Bootstrap v2.3.1
+ * Bootstrap v2.3.2
  *
- * Copyright 2012 Twitter, Inc
+ * Copyright 2013 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Designed and built with all the love in the world by @mdo and @fat.
  */
 
 .clearfix {
@@ -3009,6 +3009,15 @@ table th[class*="span"],
 
 .open > .dropdown-menu {
   display: block;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
 }
 
 .pull-right > .dropdown-menu {
@@ -6388,7 +6397,7 @@ div.subnav .nav > .active > a:hover .caret {
 }
 
 .nav-list > li > a,
-.nav-list .nav-header {
+.nav-list > .nav-header {
   color: #ece9d7;
   text-shadow: none;
 }
@@ -6427,14 +6436,22 @@ div.subnav .nav > .active > a:hover .caret {
   border-color: transparent;
 }
 
+.nav-tabs li.disabled > a:hover {
+  background-color: #45515f;
+}
+
 .nav-pills > li > a {
   color: #ece9d7;
   background-color: #45515f;
 }
 
-.nav-pills > li:hover > a {
+.nav-pills > li > a:hover {
   background-color: #5a6a7d;
   border-color: transparent;
+}
+
+.nav-pills > .disabled > a:hover {
+  background-color: #45515f;
 }
 
 .nav-tabs .open .dropdown-toggle,
@@ -6509,13 +6526,15 @@ div.subnav .nav > .active > a:hover .caret {
   background: #3a4450;
 }
 
-.pager a {
+.pager li > a,
+.pager li > span {
   color: #ece9d7;
   background-color: #45515f;
-  border-color: transparent;
+  border: none;
 }
 
-.pager a:hover {
+.pager li > a:hover,
+.pager li > span:hover {
   background: #5a6a7d;
 }
 
@@ -6824,25 +6843,35 @@ label {
   opacity: 1;
 }
 
-.label {
+.label,
+.badge {
   color: #ece9d7;
   background-color: #45515f;
 }
 
-.label-important {
+.label-important,
+.badge-important {
   background-color: #b94a48;
 }
 
-.label-warning {
+.label-warning,
+.badge-warning {
   background-color: #e36b23;
 }
 
-.label-success {
+.label-success,
+.badge-success {
   background-color: #468847;
 }
 
-.label-info {
+.label-info,
+.badge-info {
   background-color: #3a87ad;
+}
+
+.label-inverse,
+.badge-inverse {
+  background-color: #555555;
 }
 
 .alert {
@@ -6850,10 +6879,6 @@ label {
   text-shadow: none;
   background-color: #45515f;
   border: none;
-}
-
-.alert a {
-  color: #ea9059;
 }
 
 .alert .alert-heading {

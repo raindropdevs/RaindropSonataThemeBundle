@@ -1,4 +1,4 @@
-// Cyborg 2.3.1
+// Cyborg 2.3.2
 // Bootswatch
 // -----------------------------------------------------
 
@@ -220,6 +220,10 @@ div.subnav {
 		color: @white;
 	}
 
+	li.disabled > a {
+		color: @textColor;
+	}
+
 	.open .dropdown-toggle {
 		background-color: #060606;
 		border-color: transparent;
@@ -231,6 +235,10 @@ div.subnav {
 	li > a:hover {
 		background-color: @blue;
 		color: @white;
+	}
+
+	li.disabled > a {
+		color: @textColor;
 	}
 
 	.open .dropdown-toggle {
@@ -460,6 +468,11 @@ legend, label {
 		background-color: @blue;
 		color: @white;
 	}
+
+	tbody tr.warning td {
+		background-color: @orange;
+		color: @white;
+	}
 }
 
 // DROPDOWNS
@@ -487,6 +500,12 @@ legend, label {
   border: none;
 }
 
+.alert {
+	h1, h2, h3, h4, h5, h6 {
+		color: @grayLighter;
+	}
+}
+
 .label {
 	color: @grayLighter;
 }
@@ -501,7 +520,7 @@ legend, label {
 
 .label-important:hover { background-color: darken(@red, 10%); }
 
-.label-warning   { background-color: darken(@orange, 10%); }
+.label-warning, .alert-warning   { background-color: darken(@orange, 10%); }
 
 .label-warning:hover { background-color: darken(@orange, 20%); }
 
@@ -512,6 +531,12 @@ legend, label {
 .label-info, .alert-info { background-color: darken(@blueDark, 10%); }
 
 .label-info:hover { background-color: darken(@blueDark, 20%); }
+
+.badge-inverse,
+.label-inverse,
+.alert-inverse { background-color: darken(@purple, 10%); }
+
+.label-inverse:hover { background-color: darken(@purple, 20%); }
 
 // MISC
 // -----------------------------------------------------
