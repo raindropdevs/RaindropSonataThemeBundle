@@ -9,8 +9,13 @@ for i in $( find . -type d -name '[^\.]*' ); do
     rm bootstrap.min.css
 
     echo "downloading..."
-    wget http://bootswatch.com/$i/bootstrap.css
-    wget http://bootswatch.com/$i/bootstrap.min.css
+    if [ $i == "./default" ]; then
+        wget http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.css
+        wget http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.min.css
+    else
+        wget http://bootswatch.com/$i/bootstrap.css
+        wget http://bootswatch.com/$i/bootstrap.min.css
+    fi
 
     echo "setting permissions..."
     chmod 755 bootstrap.css
