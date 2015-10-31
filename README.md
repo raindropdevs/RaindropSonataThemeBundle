@@ -1,7 +1,7 @@
 RaindropSonataThemeBundle
 =========================
 
-Raindrop themes bundle for SonataAdminBundle
+Raindrop themes bundle for SonataAdminBundle (2.3+)
 
 Themes are taken from http://bootswatch.com/
 
@@ -43,16 +43,20 @@ Now the bundle is enabled.
 
 ### **AVAILABLE THEMES** ##
 
-- amelia
 - cerulean
 - cosmo
 - cyborg
+- darkly
 - default
+- flatly
 - journal
+- lumen
+- paper
 - readable
+- sandstone
+- simplex
 - slate
 - spacelab
-- spruce
 - superhero
-- symplex
 - united
+./yeti
