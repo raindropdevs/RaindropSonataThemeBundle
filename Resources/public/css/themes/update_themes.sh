@@ -13,8 +13,10 @@ for i in $( find . -type d -name '[^\.]*' ); do
         wget http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.css
         wget http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.min.css
     else
-        wget http://bootswatch.com/$i/bootstrap.css
-        wget http://bootswatch.com/$i/bootstrap.min.css
+        if [ $i != "./fonts" ]; then
+            wget http://bootswatch.com/$i/bootstrap.css
+            wget http://bootswatch.com/$i/bootstrap.min.css
+        fi
     fi
 
     echo "setting permissions..."
