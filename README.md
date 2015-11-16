@@ -59,4 +59,4 @@ Now the bundle is enabled.
 - spacelab
 - superhero
 - united
-./yeti
+- yeti
