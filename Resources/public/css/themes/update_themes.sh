@@ -10,12 +10,12 @@ for i in $( find . -type d -name '[^\.]*' ); do
 
     echo "downloading..."
     if [ $i == "./default" ]; then
-        wget http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.css
-        wget http://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.min.css
+        wget https://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.css
+        wget https://bootswatch.com/bower_components/bootstrap/dist/css/bootstrap.min.css
     else
         if [ $i != "./fonts" ]; then
-            wget http://bootswatch.com/$i/bootstrap.css
-            wget http://bootswatch.com/$i/bootstrap.min.css
+            wget https://bootswatch.com/$i/bootstrap.css
+            wget https://bootswatch.com/$i/bootstrap.min.css
         fi
     fi
 
